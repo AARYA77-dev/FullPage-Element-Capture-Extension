@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Full Page Element Screenshot",
+  "version": "1.0.0",
+  "description": "Select multiple page elements and capture their complete scrollable content as one PNG.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs",
+    "downloads",
+    "offscreen"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Full Page Element Screenshot",
+    "default_popup": "popup.html",
+     "default_icon": {
+    "16": "icons/icon.png",
+    "32": "icons/icon.png"
+  }
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "icons": {
+  "16": "icons/icon.png",
+  "32": "icons/icon.png",
+  "48": "icons/icon.png",
+  "128": "icons/icon.png"
+}
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Element Screenshot</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <header>
+      <img class="mark" src="icons/icon.png" alt="">
+      <div>
+        <h1>Element Screenshot</h1>
+        <p>Capture selected areas at full content height</p>
+      </div>
+    </header>
+
+    <section class="selection">
+      <div class="section-title">Selection</div>
+      <div class="count-row">
+        <span id="count">0 elements selected</span>
+        <button id="clear" class="link" type="button">Clear</button>
+      </div>
+      <p class="hint">Choose multiple independent areas, such as the sidebar, main panel and drawer.</p>
+    </section>
+
+    <button id="select" class="secondary" type="button">＋ Select elements on page</button>
+    <button id="capture" class="primary" type="button" disabled>Capture selected elements</button>
+    <div id="status" role="status"></div>
+    <div id="progress" class="progress" role="progressbar" aria-label="Capture progress" hidden>
+      <div id="progress-fill"></div>
+    </div>
+    <footer>
+      <span>Tip: Click elements to add/remove them.</span>
+      <span>Esc exits selection mode</span>
+    </footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
